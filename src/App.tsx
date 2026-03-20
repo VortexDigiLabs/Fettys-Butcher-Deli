@@ -102,11 +102,6 @@ const Hero = () => {
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-white uppercase tracking-tighter leading-none mb-6" style={{ textShadow: '4px 4px 0px #D32F2F' }}>
             Fetty's<br/>Biltong<br/>& Deli
           </h1>
-          <div className="flex items-center justify-center space-x-4 text-white/80 font-serif italic text-lg md:text-xl">
-            <span>Premium Quality</span>
-            <span className="w-2 h-2 rounded-full bg-primary"></span>
-            <span>Traditional Methods</span>
-          </div>
         </motion.div>
       </div>
     </section>
@@ -163,11 +158,11 @@ const Quality = () => {
               </div>
             </div>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 overflow-hidden rounded-sm shadow-xl">
             <img 
               src="https://huprbedahpwszatolkce.supabase.co/storage/v1/object/sign/Butcher%20Rudi/1773935585723-019d06cc-305e-7c3a-9235-7811967b4ac9.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82ODI5Y2JlNC02MWI3LTQ2NjAtYmNiYi0wZTk3YWQ0NjY5NzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCdXRjaGVyIFJ1ZGkvMTc3MzkzNTU4NTcyMy0wMTlkMDZjYy0zMDVlLTdjM2EtOTIzNS03ODExOTY3YjRhYzkucG5nIiwiaWF0IjoxNzczOTM1OTQ4LCJleHAiOjE4MDU0NzE5NDh9.giSS-fs3pQ5-_5KgQ3_bANAoGck8b4byEAx2lVOt4Wc" 
               alt="Artisan Butcher" 
-              className="w-full h-[500px] object-cover shadow-xl rounded-sm"
+              className="w-full h-[500px] object-cover animate-hero-zoom"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -202,12 +197,25 @@ const Menu = () => {
   ];
 
   return (
-    <section id="menu" className="bg-[#EAE8E3] text-neutral-dark py-24 relative overflow-hidden">
-      {/* Decorative background elements could go here */}
+    <section id="menu" className="bg-neutral-dark text-white py-24 relative overflow-hidden">
+      {/* Full Screen Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover animate-hero-zoom"
+        >
+          <source src="https://huprbedahpwszatolkce.supabase.co/storage/v1/object/sign/Butcher%20Rudi/download%20(2).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82ODI5Y2JlNC02MWI3LTQ2NjAtYmNiYi0wZTk3YWQ0NjY5NzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCdXRjaGVyIFJ1ZGkvZG93bmxvYWQgKDIpLm1wNCIsImlhdCI6MTc3NDAwNzMyMywiZXhwIjoxODA1NTQzMzIzfQ.I8u2tHFVxLfuHFamVdXCXNnGr5JHT8acSpNd2MUkc_o" type="video/mp4" />
+        </video>
+      </div>
+      
+      <div className="absolute inset-0 bg-black/40 z-0"></div>
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-serif font-bold italic mb-4">Menu</h2>
+          <h2 className="text-5xl md:text-6xl font-serif font-bold italic mb-4 text-white">Menu</h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </div>
 
@@ -217,9 +225,9 @@ const Menu = () => {
               <div className="flex justify-between items-baseline mb-1">
                 <h3 className="text-primary font-bold tracking-wide uppercase text-lg">{item.name}</h3>
                 <div className="menu-leader hidden sm:block"></div>
-                <span className="font-serif font-bold text-xl whitespace-nowrap">{item.price}</span>
+                <span className="font-serif font-bold text-xl whitespace-nowrap text-white">{item.price}</span>
               </div>
-              <p className="text-gray-600 font-sans text-sm sm:text-base pr-0 sm:pr-24">{item.description}</p>
+              <p className="text-gray-300 font-sans text-sm sm:text-base pr-0 sm:pr-24">{item.description}</p>
             </div>
           ))}
         </div>

@@ -19,7 +19,7 @@ body {
 /* Custom utility for the dotted leader in the menu */
 .menu-leader {
   flex-grow: 1;
-  border-bottom: 2px dotted #ccc;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
   margin: 0 1rem;
   position: relative;
   top: -6px;
