@@ -160,9 +160,9 @@ const Quality = () => {
           </div>
           <div className="order-1 md:order-2 overflow-hidden rounded-sm shadow-xl">
             <img 
-              src="https://huprbedahpwszatolkce.supabase.co/storage/v1/object/sign/Butcher%20Rudi/1773935585723-019d06cc-305e-7c3a-9235-7811967b4ac9.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82ODI5Y2JlNC02MWI3LTQ2NjAtYmNiYi0wZTk3YWQ0NjY5NzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCdXRjaGVyIFJ1ZGkvMTc3MzkzNTU4NTcyMy0wMTlkMDZjYy0zMDVlLTdjM2EtOTIzNS03ODExOTY3YjRhYzkucG5nIiwiaWF0IjoxNzczOTM1OTQ4LCJleHAiOjE4MDU0NzE5NDh9.giSS-fs3pQ5-_5KgQ3_bANAoGck8b4byEAx2lVOt4Wc" 
+              src="https://huprbedahpwszatolkce.supabase.co/storage/v1/object/sign/Butcher%20Rudi/hf_20260327_180405_84812d84-27f0-455c-8360-562a238f9d90-ezgif.com-optimize.gif?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV82ODI5Y2JlNC02MWI3LTQ2NjAtYmNiYi0wZTk3YWQ0NjY5NzAiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJCdXRjaGVyIFJ1ZGkvaGZfMjAyNjAzMjdfMTgwNDA1Xzg0ODEyZDg0LTI3ZjAtNDU1Yy04MzYwLTU2MmEyMzhmOWQ5MC1lemdpZi5jb20tb3B0aW1pemUuZ2lmIiwiaWF0IjoxNzc0NjM2Mzc1LCJleHAiOjE4MDYxNzIzNzV9.sVaagIKzZxB3_7mzbfB7QLd4dvpHLLDgS-oAQq61Hu4" 
               alt="Artisan Butcher" 
-              className="w-full h-[500px] object-cover animate-hero-zoom"
+              className="w-full h-[600px] object-cover object-bottom"
               referrerPolicy="no-referrer"
             />
           </div>
